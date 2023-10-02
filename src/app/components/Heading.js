@@ -2,8 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 const menuContent = {
     text:{
-        heading: "Travel The World",
-        description: "Find your perfect place for visit"
+        heading: "Travel To The World",
+        description: "Find your perfect place for Travel by HFlamar"
     }
 }
 
