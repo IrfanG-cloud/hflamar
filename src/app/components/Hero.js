@@ -23,8 +23,8 @@ const heroContent = {
 
 const Hero = () => {
   return (
-    <section className='py-20 px-20'>
-        <div className='container px-4 mx-auto'>
+    <section className='py-20 px-20 bg-white'>
+        <div className='container mx-auto'>
             <div className='lg:flex justify-between items-center'>
                 <div className='lg:w-6/12 mb-10 lg:mb-0'>
                     
@@ -52,7 +52,7 @@ const Hero = () => {
                     </div> */}
                 </div>
 
-                <div className="w-6/12 space-y-2 ">
+                <div className="lg:w-6/12 space-y-2 ">
                     <div className="flex space-x-2 items-stretch justify-center">
                         <div className="w-4/12 ">
                             {heroContent.images.img1 && (

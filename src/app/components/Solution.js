@@ -21,8 +21,8 @@ const solutionContent = {
 
 const Solutions = () => {
   return (
-    <section className='py-20 overflow-x-hidden px-10'>
-        <div className='comtainer px-4 mx-auto'>
+    <section className='container mx-auto py-20 overflow-x-hidden px-10'>
+        <div className=''>
             <div className='lg:flex space-x-2 justify-between'>
                 <div className="lg:w-6/12 relative b-10 lg:mb-0 z-10
                 before:-[] before:w-screen before:right-1/2 before:rounded-tr-[200px] 
