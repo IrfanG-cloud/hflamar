@@ -12,7 +12,7 @@ const Navigation = () => {
     
   return (
     <>
-<nav className=" px-6 lg:px-20">
+<nav className=" px-6 ">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white font-bold text-2xl mt-4 ">
         <Link href="/">
@@ -20,7 +20,7 @@ const Navigation = () => {
                 alt='FrameSec Logo' />
             </Link>
         </div>
-        <div className=''>
+        <div>
         <ul className={`lg:flex sm:flex-col lg:flex-row ${isOpen ? 'p-15 md:p-0 block' : 'hidden'} my-50 list-none lg:list-inline`}>
           <li className=" lg:mr-6 mb-2 lg:mb-0 ">
             <Link href="/" onClick={() => setIsOpen(!isOpen)} className="text-white border-b-2 border-yellow-500 text-yellow-500 hover:border-yellow-500 ">

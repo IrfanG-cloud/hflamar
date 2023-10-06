@@ -24,7 +24,7 @@ const Heading = () => {
 bg-white text-black rounded-lg duration-300
 transition-all ease-in-out hover:bg-[#000] hover:text-white
 hover:shadow-lg inline-block relative top-0 hover:-top-2
-">Get Start</Link>
+">BOOK NOW</Link>
 
 </div>
     </div>

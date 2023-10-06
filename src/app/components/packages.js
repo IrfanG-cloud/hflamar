@@ -10,8 +10,8 @@ import Link from 'next/link';
 
 const welcomeContent = {
     text:{
-        subheading: 'Our Packages',
-        heading: "Special Dicount with Hflamar",
+        subheading: 'Special Offers',
+        heading: "For our valued guests",
     },
     images: {
         icon: '/images/dubai.jpg',
@@ -51,14 +51,14 @@ const Welcome = () => {
                     transition-all ease-in-out hover:border-2 hover:border-[#D4AF37]
                     hover:shadow-lg inline-block relative top-0 hover:-top-1 text-center">
             <Image src={Icon} width={250} height={150} alt='hflamar.com'/>
-            <h2 className="font-bold text-xl mb-2 pt-4 ">United Arab Emirates</h2>
+            <h2 className="text-xl mb-2 pt-4 ">Upto 20% off on Visit Visa</h2>
             
         </div>
         <div className="shadow-lg bg-white ml-6 mb-6 duration-300
                     transition-all ease-in-out hover:border-2 hover:border-[#D4AF37]
                     hover:shadow-lg inline-block relative top-0 hover:-top-1 text-center">
             <Image src={Icon1} width={250} height={150} alt='hflamar.com'/>
-            <h2 className="font-bold text-xl mb-2 pt-4 ">Iraq</h2>
+            <h2 className="font-bold text-xl mb-2 pt-4 ">Upto 10% off on fly dubai</h2>
             
         </div>
         <div className="shadow-lg ml-6 mb-6 duration-300
@@ -66,7 +66,7 @@ const Welcome = () => {
                     hover:shadow-lg inline-block relative top-0 hover:-top-1 text-center"> 
         <Link href="#">
             <Image src={Icon2} width={250} height={100} alt='hflamar.com'/>
-            <h2 className="font-bold text-xl">Saudi Arabia</h2>
+            <h2 className="font-bold text-xl">Upto 10% off on Hajj & Umarah</h2>
         </Link>
         </div>
         <div className="shadow-lg ml-6 mb-6 duration-300
@@ -74,7 +74,7 @@ const Welcome = () => {
                     hover:shadow-lg inline-block relative top-0 hover:-top-1 text-center"> 
         <Link href="#">
             <Image src={Icon3} width={250} height={100} alt='hflamar.com'/>
-            <h2 className="font-bold text-xl">Oman</h2>
+            <h2 className="font-bold text-xl">Upto 20% off on Hotel stay</h2>
         </Link>
         </div>
     </div>

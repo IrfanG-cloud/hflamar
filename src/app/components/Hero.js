@@ -23,8 +23,7 @@ const heroContent = {
 
 const Hero = () => {
   return (
-    <section className='py-20 px-6 lg:px-20 bg-light
-    '>
+    <section className='py-20 px-6 lg:px-20 bg-white'>
         <div className='container mx-auto'>
             <div className='lg:flex justify-between items-center'>
                 <div className='lg:w-6/12 mb-10 lg:mb-0'>
@@ -42,15 +41,6 @@ const Hero = () => {
 
                         {heroContent.text.description && (<p className="leading-relaxed my-4">
                         {heroContent.text.description}</p>)}
-
-                        {/* <div className=''>
-                    <Link href="#" className="mt-4 py-3 px-4
-                    bg-yellowLight text-white rounded-lg duration-300
-                    transition-all ease-in-out hover:bg-[#c30010]
-                    hover:shadow-lg inline-block relative top-0 hover:-top-2
-                    ">How It Works?</Link>
-
-                    </div> */}
                 </div>
 
                 <div className="lg:w-6/12 space-y-2 ">
