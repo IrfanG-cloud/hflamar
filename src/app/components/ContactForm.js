@@ -3,6 +3,7 @@
 // components/ContactForm.js
 import { useState } from 'react';
 import Link from 'next/link';
+import MyGoogleMap from './MyGoogleMap';
 
 const formContent = {
     text:{
@@ -31,9 +32,14 @@ export default function ContactForm() {
 
   return (
     <section className='bg-light container mx-auto'>
-        <div className='py-20 px-20'>
+        
+        <div className='py-20 px-6 lg:px-20'>
+                <div>
+                <MyGoogleMap />
+                </div>
             <div className='lg:flex'>
-                <div className='lg:w-6/12 mb-10 py-20 px-20 lg:mb-0'>
+                
+                <div className='lg:w-6/12 mb-10 lg:py-20 px-6 lg:px-20 lg:mb-0'>
                     {formContent.text.heading && (<h1 className="text-4xl 
                         lg:text-5xl font-bold text-heading
                     ">{formContent.text.heading}</h1>)}
@@ -49,7 +55,7 @@ export default function ContactForm() {
                     
                     </div>
             </div>
-                <div className='lg:w-6/12 m-10 bg-white'>
+                <div className='w-full lg:w-6/12 lg:m-10 bg-white'>
                     <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-10 border rounded-md">
                     <div className="my-4">
                         <label htmlFor="name" className="block text-sm font-medium text-gray-700">

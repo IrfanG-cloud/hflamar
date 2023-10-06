@@ -23,14 +23,15 @@ const heroContent = {
 
 const Hero = () => {
   return (
-    <section className='py-20 px-20 bg-white'>
+    <section className='py-20 px-6 lg:px-20 bg-light
+    '>
         <div className='container mx-auto'>
             <div className='lg:flex justify-between items-center'>
                 <div className='lg:w-6/12 mb-10 lg:mb-0'>
                     
-                        {heroContent.text.subheading && (<span 
-                        className="inline-block py-0.5 pl-3 text-heading 
-                    font-semibold relative mb-7 before:content-[''] before:absolute
+                        {heroContent.text.subheading && (
+                        <span className="inline-block py-0.5 z-50 pl-3 text-heading 
+                    font-semibold relative before:content-[''] before:absolute
                     before:w-2/3 before:bg-yellowLight before:left-0
                     before:top-0 before:bottom-0 before:z-[-1]">
                         {heroContent.text.subheading}</span>)}

@@ -5,82 +5,61 @@ import Link from 'next/link'
 import Image from 'next/image'
 import logo from '../../../public/images/logo.png'
 import { useState } from 'react';
+import { FaBars, FaTimesCircle} from "react-icons/fa";
 
 const Navigation = () => {
     const [isOpen, setIsOpen] = useState(false);
     
   return (
     <>
-        {/* <header className='px-10'>
-            <div className='container px-4 mx-auto'>
-                <div className='flex justify-between items-center'>
-                
-                    <div>
-                        <Link href="/">
-                        <Image src={logo} width={137} height={30}
-                        alt='FrameSec Logo' />
-                        </Link>
-                    </div>
-
-                    <div className='hidden lg:block'>
-                        <ul className='flex space-x-7 text-white'>
-                            <li>
-                                <Link href="/" className='border-b-2 border-[#D4AF37] hover:border-b-2 hover:border-yellow-500 hover:text-yellow-500'>Home</Link>
-                            </li>
-                            <li>
-                                <Link href="/service" className='hover:border-b-2 hover:border-yellow-500 hover:text-yellow-500'>Services</Link>
-                            </li>
-                            <li>
-                                <Link href="/about" className='hover:border-b-2 hover:border-yellow-500 hover:text-yellow-500'>About</Link>
-                            </li>
-                            <li>
-                                <Link href="/contact"className='hover:border-b-2 hover:border-yellow-500 hover:text-yellow-500'>Contact</Link>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </header> */}
-
-<nav className="px-20">
+<nav className=" px-6 lg:px-20">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white font-bold text-2xl">
+        <div className="text-white font-bold text-2xl mt-4 ">
         <Link href="/">
-            <Image src={logo} width={137} height={30}
+            <Image src={logo} width={80} height={30}
                 alt='FrameSec Logo' />
             </Link>
         </div>
-        <div className="lg:hidden">
-          <button onClick={() => setIsOpen(!isOpen)} className="text-white">
-            <span className="mr-1">Menu</span>
-            <i className={`fas fa-${isOpen ? 'times' : 'bars'}`} />
-          </button>
-        </div>
-        <ul className={`lg:flex flex-col lg:flex-row ${isOpen ? 'block' : 'hidden'} list-none lg:list-inline`}>
-          <li className="lg:mr-6 mb-2 lg:mb-0 ">
-            <Link href="/" className="text-white hover:border-b-2 hover:border-yellow-500 ">
+        <div className=''>
+        <ul className={`lg:flex sm:flex-col lg:flex-row ${isOpen ? 'p-15 md:p-0 block' : 'hidden'} my-50 list-none lg:list-inline`}>
+          <li className=" lg:mr-6 mb-2 lg:mb-0 ">
+            <Link href="/" onClick={() => setIsOpen(!isOpen)} className="text-white border-b-2 border-yellow-500 text-yellow-500 hover:border-yellow-500 ">
               Home
             </Link>
           </li>
           <li className="lg:mr-6 mb-2 lg:mb-0">
-            <Link href="/about" className="text-white hover:border-b-2 hover:border-yellow-500 ">
+            <Link href="/about" onClick={() => setIsOpen(!isOpen)} className="text-white hover:text-yellow-500 hover:border-b-2 hover:border-yellow-500 ">
               About
             </Link>
           </li>
           <li className="lg:mr-6 mb-2 lg:mb-0">
-            <Link href="/service" className="text-white hover:border-b-2 hover:border-yellow-500 ">
+            <Link href="/packages" onClick={() => setIsOpen(!isOpen)} className="text-white hover:text-yellow-500 hover:border-b-2 hover:border-yellow-500 ">
+              Packages
+            </Link>
+          </li>
+          <li className="lg:mr-6 mb-2 lg:mb-0">
+            <Link href="/service" onClick={() => setIsOpen(!isOpen)} className="text-white hover:text-yellow-500 hover:border-b-2 hover:border-yellow-500 ">
               Services
             </Link>
           </li>
           <li className="lg:mr-6 mb-2 lg:mb-0">
-            <Link href="/contact" className="text-white hover:border-b-2 hover:border-yellow-500 ">
+            <Link href="/contact" onClick={() => setIsOpen(!isOpen)} className="text-white hover:border-b-2 hover:border-yellow-500 ">
               Contact
             </Link>
           </li>
         </ul>
+        </div>
+        
+        
+        <div className='md:hidden'>
+            <button className='p-2 rounded-md outline-none text-2xl text-[var(--primary-color)]' onClick={() => setIsOpen(!isOpen)}>
+                {isOpen ? <FaTimesCircle /> : <FaBars />}
+            </button>
+        </div>
       </div>
     </nav>
+
+
 
     </>
   )

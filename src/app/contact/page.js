@@ -3,7 +3,7 @@ import ContactForm from '../components/ContactForm'
 
 const Contact = () => {
   return (
-    <div className=''>
+    <div>
         <ContactForm />
     </div>
   )

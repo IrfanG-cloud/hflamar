@@ -20,9 +20,6 @@ export default function Footer() {
           <Link href={"https://www.facebook.com/profile.php?id=100093621885797&mibextid=ZbWKwL"} className='mr-3'>
           <span className=' text-[#25d366] hover:text-[#fff]'>Whatsapp</span>
           </Link>
-          <Link href={"https://www.facebook.com/profile.php?id=100093621885797&mibextid=ZbWKwL"} className='mr-3'>
-          <span className=' text-[#0E76A8] hover:text-[#fff]'>Linkedin</span>
-          </Link>
           </div>
         </div>
 
