@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Welcome from './Welcome'
 
 const heroContent = {
     text:{
@@ -22,7 +23,7 @@ const heroContent = {
 
 const Hero = () => {
   return (
-    <section className='py-20 px-6 lg:px-20 bg-light'>
+    <section className='py-20 px-6 lg:px-20 bg-white'>
         <div className='container mx-auto'>
             <div className='lg:flex justify-between items-center'>
                 <div className='lg:w-6/12 mb-10 lg:mb-0'>
@@ -148,6 +149,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
+            <Welcome />
         </div>
     </section>
   )

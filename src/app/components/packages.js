@@ -9,10 +9,10 @@ import Link from 'next/link';
 
 
 const welcomeContent = {
-    text:{
-        subheading: 'Special Offers',
-        heading: "For our valued guests",
-    },
+    // text:{
+    //     subheading: 'Special Offers',
+    //     heading: "For our valued guests",
+    // },
     images: {
         icon: '/images/dubai.jpg',
         icon1: '/images/uraq.jpg',
@@ -28,7 +28,7 @@ const Welcome = () => {
     <section>
         <div className='px-10 py-20 bg-white'>
             <div className='container mx-auto'>
-                <div className='max-w-full mx-auto text-center mb-20'>
+                {/* <div className='max-w-full mx-auto text-center mb-20'>
                 {welcomeContent.text.subheading && (
                     <span className="inline-block py-0.5 z-50 pl-3 text-heading 
                     font-semibold relative before:content-[''] before:absolute
@@ -44,21 +44,21 @@ const Welcome = () => {
                     {welcomeContent.text.heading}
                 </h2>
                 )}
-                </div>
+                </div> */}
                 <div className='grid grid-cols-1'>
                 <div className='w-full lg:flex lg:justify-between'>
         <div className="shadow-lg bg-white ml-6 mb-6 duration-300
                     transition-all ease-in-out hover:border-2 hover:border-[#D4AF37]
                     hover:shadow-lg inline-block relative top-0 hover:-top-1 text-center">
             <Image src={Icon} width={250} height={150} alt='hflamar.com'/>
-            <h2 className="text-xl mb-2 pt-4 ">Upto 20% off on Visit Visa</h2>
+            {/* <h2 className="text-xl mb-2 pt-4 ">Upto 20% off on Visit Visa</h2> */}
             
         </div>
         <div className="shadow-lg bg-white ml-6 mb-6 duration-300
                     transition-all ease-in-out hover:border-2 hover:border-[#D4AF37]
                     hover:shadow-lg inline-block relative top-0 hover:-top-1 text-center">
             <Image src={Icon1} width={250} height={150} alt='hflamar.com'/>
-            <h2 className="font-bold text-xl mb-2 pt-4 ">Upto 10% off on fly dubai</h2>
+            {/* <h2 className="font-bold text-xl mb-2 pt-4 ">Upto 10% off on fly dubai</h2> */}
             
         </div>
         <div className="shadow-lg ml-6 mb-6 duration-300
@@ -66,7 +66,7 @@ const Welcome = () => {
                     hover:shadow-lg inline-block relative top-0 hover:-top-1 text-center"> 
         <Link href="#">
             <Image src={Icon2} width={250} height={100} alt='hflamar.com'/>
-            <h2 className="font-bold text-xl">Upto 10% off on Hajj & Umarah</h2>
+            {/* <h2 className="font-bold text-xl">Upto 10% off on Hajj & Umarah</h2> */}
         </Link>
         </div>
         <div className="shadow-lg ml-6 mb-6 duration-300
@@ -74,7 +74,7 @@ const Welcome = () => {
                     hover:shadow-lg inline-block relative top-0 hover:-top-1 text-center"> 
         <Link href="#">
             <Image src={Icon3} width={250} height={100} alt='hflamar.com'/>
-            <h2 className="font-bold text-xl">Upto 20% off on Hotel stay</h2>
+            {/* <h2 className="font-bold text-xl">Upto 20% off on Hotel stay</h2> */}
         </Link>
         </div>
     </div>

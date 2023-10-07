@@ -39,18 +39,14 @@ export default function ContactForm() {
                 {/* <div>
                 <MyGoogleMap />
                 </div> */}
-            <div className='lg:flex'>
-                
-                <div className='lg:w-6/12 mb-10 px-6 lg:px-20 lg:mb-0'>
+            <div className='lg:flex'> 
+                <div className='w-full lg:w-6/12 mb-10 px-6 lg:px-20 lg:mb-0'>
                     {formContent.text.heading && (<h1 className="text-4xl
                         lg:text-5xl font-bold text-heading
                     ">{formContent.text.heading}</h1>)}
                     {formContent.text.description && (<span>{formContent.text.subheading}</span>)}
                     {formContent.text.description && (<p className="my-4">
                     {formContent.text.description}</p>)}
-                    <div>
-                        <Link href="https://go.2gis.com/goqjq2"><Image src={Map} width={400} height={400} alt="map"></Image></Link>
-                    </div>
                     
                     <div className='mt-10'>
                     <p className='pt-1'>P.O Box : 14323</p>
@@ -64,7 +60,10 @@ export default function ContactForm() {
 
             </div>
                 <div className='w-full lg:w-6/12 lg:m-10'>
-                    <form onSubmit={handleSubmit} className="max-w-lg bg-white mx-auto p-10 border rounded-md">
+                <div>
+                        <Link href="https://go.2gis.com/goqjq2"><Image src={Map} width={500} height={400} alt="map"></Image></Link>
+                    </div>
+                    {/* <form onSubmit={handleSubmit} className="max-w-lg bg-white mx-auto p-10 border rounded-md">
                     <div className="my-4">
                         <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                         Name
@@ -106,7 +105,7 @@ export default function ContactForm() {
                     <button type="submit" className="bg-yellow-500 text-white px-4 py-2 rounded-md hover:bg-red">
                         Send
                     </button>
-                    </form>
+                    </form> */}
                 </div>
             </div>
         </div>
