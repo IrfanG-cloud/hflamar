@@ -63,7 +63,7 @@ export default function ContactForm() {
                     
 
             </div>
-                <div className='w-full lg:w-6/12 lg:m-10 bg-white'>
+                <div className='w-full lg:w-6/12 lg:m-10'>
                     <form onSubmit={handleSubmit} className="max-w-lg bg-white mx-auto p-10 border rounded-md">
                     <div className="my-4">
                         <label htmlFor="name" className="block text-sm font-medium text-gray-700">
