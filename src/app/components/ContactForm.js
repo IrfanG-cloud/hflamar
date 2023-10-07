@@ -4,6 +4,8 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import MyGoogleMap from './MyGoogleMap';
+import Image from 'next/image';
+import Map from '../../../public/images/map.jpg'
 
 const formContent = {
     text:{
@@ -34,29 +36,35 @@ export default function ContactForm() {
     <section className='bg-light container mx-auto'>
         
         <div className='py-20 px-6 lg:px-20'>
-                <div>
+                {/* <div>
                 <MyGoogleMap />
-                </div>
+                </div> */}
             <div className='lg:flex'>
                 
-                <div className='lg:w-6/12 mb-10 lg:py-20 px-6 lg:px-20 lg:mb-0'>
-                    {formContent.text.heading && (<h1 className="text-4xl 
+                <div className='lg:w-6/12 mb-10 px-6 lg:px-20 lg:mb-0'>
+                    {formContent.text.heading && (<h1 className="text-4xl
                         lg:text-5xl font-bold text-heading
                     ">{formContent.text.heading}</h1>)}
                     {formContent.text.description && (<span>{formContent.text.subheading}</span>)}
                     {formContent.text.description && (<p className="my-4">
                     {formContent.text.description}</p>)}
+                    <div>
+                        <Link href="https://go.2gis.com/goqjq2"><Image src={Map} width={400} height={400} alt="map"></Image></Link>
+                    </div>
+                    
                     <div className='mt-10'>
                     <p className='pt-1'>P.O Box : 14323</p>
                     <p className='pt-1'>Dubai, United Arab Emirates</p>
                     <p className='pt-1'> Tel: +971 4 3476855</p>
-                    <Link href="#"><p className='pt-1'> Whatsapp: +971 50 142 1635</p></Link>
+                    <Link href="https://wa.me/message/IUIFOVZQVHNLB1"><p className='pt-1'> Whatsapp: +971 50 142 1635</p></Link>
                     <p className='pt-1'> Email: hrlamar55@gmail.com</p>
                     
                     </div>
+                    
+
             </div>
                 <div className='w-full lg:w-6/12 lg:m-10 bg-white'>
-                    <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-10 border rounded-md">
+                    <form onSubmit={handleSubmit} className="max-w-lg bg-white mx-auto p-10 border rounded-md">
                     <div className="my-4">
                         <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                         Name

@@ -11,13 +11,13 @@ export default function Footer() {
           <p className='py-4'>Small, artisan label that offers a thoughtfully curated <br/>collection of high quality everyday essentials made.</p>
           </div>
          <div className='py-4 '>
-          <Link href={"https://www.facebook.com/profile.php?id=100093621885797&mibextid=ZbWKwL"} className='mr-3'>
-            <span className=' text-[#1DA1F2] hover:text-[#fff]'>Twitter</span>
+          <Link href={"https://go.2gis.com/xdbcc"} className='mr-3'>
+            <span className=' text-[#1DA1F2] hover:text-[#fff]'>Tiktok</span>
           </Link> 
           <Link href={"https://www.facebook.com/profile.php?id=100086561906946&mibextid=ZbWKwL"} className='mr-3'>
           <span className=' text-[#3b5998] hover:text-[#fff]'>Facebook</span>
           </Link>
-          <Link href={"https://www.facebook.com/profile.php?id=100093621885797&mibextid=ZbWKwL"} className='mr-3'>
+          <Link href={"https://wa.me/message/IUIFOVZQVHNLB1"} className='mr-3'>
           <span className=' text-[#25d366] hover:text-[#fff]'>Whatsapp</span>
           </Link>
           </div>

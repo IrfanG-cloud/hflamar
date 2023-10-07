@@ -26,7 +26,7 @@ const welcomeContent = {
 const Welcome = () => {
   return (
     <section>
-        <div className='px-10 py-20 bg-light'>
+        <div className='px-10 py-20 bg-white'>
             <div className='container mx-auto'>
                 <div className='max-w-full mx-auto text-center mb-20'>
                 {welcomeContent.text.subheading && (

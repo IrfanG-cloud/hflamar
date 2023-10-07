@@ -12,7 +12,7 @@ const Navigation = () => {
     
   return (
     <>
-<nav className=" px-6 ">
+<nav className=" px-6 lg:px-20">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white font-bold text-2xl mt-4 ">
         <Link href="/">
@@ -47,6 +47,13 @@ const Navigation = () => {
               Contact
             </Link>
           </li>
+          <div className=''>
+            <Link href="https://wa.me/message/IUIFOVZQVHNLB1" className="py-2 px-2 lg:py-3 lg:px-4 
+            bg-green-500 rounded-lg duration-300
+            transition-all ease-in-out text-white
+            hover:shadow-lg inline-block relative -top-2 hover:-top-2
+            ">Whatsapp Me</Link>
+            </div>
         </ul>
         </div>
         
