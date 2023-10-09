@@ -6,7 +6,7 @@ const heroContent = {
     text:{
         subheading: 'Welcome To HFlamar',
         heading: "About HFlamar",
-        description: "you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. "
+        description:  "At HFlamar, we help you travel without worries. We pick the best spots for you to see. Our team plans everything, so you can just relax. Traveling is easier and more fun with us. "
     },
     images: {
         img1: '/images/img1.jpg',
@@ -41,13 +41,15 @@ const Hero = () => {
 
                         {heroContent.text.description && (<p className="leading-relaxed my-4">
                         {heroContent.text.description}</p>)}
+
+                        <Welcome />
                 </div>
 
                 <div className="lg:w-6/12 space-y-2 ">
                     <div className="flex space-x-2 items-stretch justify-center">
                         <div className="w-4/12 ">
-                            {heroContent.images.img1 && (
-                                <Image src={heroContent.images.img1}
+                            {heroContent.images.img5 && (
+                                <Image src={heroContent.images.img5}
                                 width={406} height={406} alt="lamar.com"
                                 className="object-cover h-full w-full rounded-2xl duration-300
                                 transition-all ease-in-out hover:bg-[#c30010]
@@ -149,7 +151,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <Welcome />
+            
         </div>
     </section>
   )

@@ -32,11 +32,7 @@ const Navigation = () => {
               About
             </Link>
           </li>
-          <li className="lg:mr-6 mb-2 lg:mb-0">
-            <Link href="/packages" onClick={() => setIsOpen(!isOpen)} className="text-white hover:text-yellow-500 hover:border-b-2 hover:border-yellow-500 ">
-              Packages
-            </Link>
-          </li>
+          
           <li className="lg:mr-6 mb-2 lg:mb-0">
             <Link href="/service" onClick={() => setIsOpen(!isOpen)} className="text-white hover:text-yellow-500 hover:border-b-2 hover:border-yellow-500 ">
               Services

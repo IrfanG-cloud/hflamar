@@ -12,13 +12,6 @@ const welcomeContent = {
     text:{
         subheading: 'Our Destination',
         heading: "Best Destination Tour with Hflamar",
-    },
-    images: {
-
-        icon1: '/images/uraq.pg',
-        icon2: '/images/khana.jpg',
-        icon3: '/images/oman.jpg',
-    
     }
 }
 
@@ -47,23 +40,23 @@ const Welcome = () => {
                 </div> */}
                 <div className='grid grid-cols-1'>
                 <div className='w-full lg:flex lg:justify-between'>
-        <div className="mt-4">
-            <Image src={Icon1} width={250} height={150} alt='hflamar.com' className='rounded-2xl'/>
+        <div className="">
+            <Image src={Icon1} width={200} height={100} alt='hflamar.com' className='rounded-2xl'/>
             
         </div>
-        <div className="mt-4"> 
+        <div className="ml-3 mt-4 lg:mt-0"> 
         <Link href="#">
-            <Image src={Icon} width={250} height={100} alt='hflamar.com' className='rounded-2xl'/>
+            <Image src={Icon} width={200} height={100} alt='hflamar.com' className='rounded-2xl'/>
         </Link>
         </div>
-        <div className="mt-4"> 
+        <div className="ml-3 mt-4 lg:mt-0"> 
         <Link href="#">
-            <Image src={Icon2} width={250} height={100} alt='hflamar.com' className='rounded-2xl'/>
+            <Image src={Icon2} width={200} height={100} alt='hflamar.com' className='rounded-2xl'/>
         </Link>
         </div>
-        <div className="mt-4"> 
+        <div className="ml-3 mt-4 lg:mt-0 "> 
         <Link href="#">
-            <Image src={Icon3} width={250} height={100} alt='hflamar.com' className='rounded-2xl'/>
+            <Image src={Icon3} width={200} height={100} alt='hflamar.com' className='rounded-2xl'/>
         </Link>
         </div>
     </div>

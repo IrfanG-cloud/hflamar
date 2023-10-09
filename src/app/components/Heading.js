@@ -10,7 +10,7 @@ const menuContent = {
 const Heading = () => {
   return (
     <section className='container mx-auto'>
-    <div className='px-20 mt-6 lg:mt-24 lg:mb-0 text-center '>
+    <div className='px-20 mt-10 lg:mt-32 lg:mb-0 text-center '>
 
     {menuContent.text.heading && (<h1 className="text-2xl mt-4
     lg:text-4xl font-bold text-heading text-white 

@@ -4,9 +4,9 @@ import Link from 'next/link'
 
 const solutionContent = {
     text: {
-        headingSubTitle: 'Air Ticketing',
-        headingTitle: 'Low price with Fly Dubai all over the world ',
-        description: 'you are going to use a passage of Lorem Ipsum, you need to be sure there isnot anything embarrassing hidden in the middle of text'
+        headingSubTitle: 'Best Travel',
+        headingTitle: 'Flydubai is the best',
+        description: 'We plan trips that you will love. Travel with us for a great time.'
     },
     images: {
         sol1: "/images/sol1.jpg",
@@ -22,7 +22,7 @@ const solutionContent = {
 const Solutions = () => {
   return (
     <section className='container mx-auto py-20 overflow-x-hidden px-10'>
-        <div className=''>
+        <div className='lg:px-20'>
             <div className='lg:flex space-x-2 justify-between'>
                 <div className="lg:w-6/12 relative b-10 lg:mb-0 z-10
                 before:-[] before:w-screen before:right-1/2 before:rounded-tr-[200px] 
@@ -120,7 +120,7 @@ const Solutions = () => {
                     bg-yellowLight text-white rounded-lg duration-300
                     transition-all ease-in-out hover:bg-[#c30010]
                     hover:shadow-lg inline-block relative top-0 hover:-top-1
-                    ">How It Works?</Link>
+                    ">Book Now</Link>
 
                     </div>
                 </div>

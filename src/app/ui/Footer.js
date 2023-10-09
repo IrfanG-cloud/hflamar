@@ -11,7 +11,7 @@ export default function Footer() {
           <p className='py-4'>Small, artisan label that offers a thoughtfully curated <br/>collection of high quality everyday essentials made.</p>
           </div>
          <div className='py-4 '>
-          <Link href={"https://go.2gis.com/xdbcc"} className='mr-3'>
+          <Link href={"https://www.instagram.com/hf.lamar/?igshid=MzMyNGUyNmU2YQ%3D%3D"} className='mr-3'>
             <span className=' text-[#1DA1F2] hover:text-[#fff]'>Tiktok</span>
           </Link> 
           <Link href={"https://www.facebook.com/profile.php?id=100086561906946&mibextid=ZbWKwL"} className='mr-3'>
@@ -19,6 +19,9 @@ export default function Footer() {
           </Link>
           <Link href={"https://wa.me/message/IUIFOVZQVHNLB1"} className='mr-3'>
           <span className=' text-[#25d366] hover:text-[#fff]'>Whatsapp</span>
+          </Link>
+          <Link href={"https://www.instagram.com/hf.lamar/?igshid=MzMyNGUyNmU2YQ%3D%3D"} className='mr-3'>
+          <span className=' text-[#E600E5] hover:text-[#fff]'>Instagram</span>
           </Link>
           </div>
         </div>
@@ -37,15 +40,15 @@ export default function Footer() {
           <ul className=''>
             <Link href="" className=' text-[#B9BBB6] hover:text-[#fff] mb-2'><li>Support </li></Link>
             <Link href={"https://api.whatsapp.com/send?phone=963995817380"} className=' text-[#B9BBB6] hover:text-[#fff] mb-2'><li>24h Service</li></Link>
-            <Link href={"https://api.whatsapp.com/send?phone=963995817380"} className=' text-[#B9BBB6] hover:text-[#fff] mb-2'><li>Quick Chat</li></Link>
+            <Link href={"https://api.whatsapp.com/message/IUIFOVZQVHNLB1?autoload=1&app_absent=0"} className=' text-[#B9BBB6] hover:text-[#fff] mb-2'><li>Quick Chat</li></Link>
             <Link href="" className=' text-[#B9BBB6] hover:text-[#fff] mb-2'><li>How it works</li></Link>
-            <Link href="" className=' text-[#B9BBB6] hover:text-[#fff] mb-2'><li>Contact us</li></Link>
+            <Link href={"/contact"} className=' text-[#B9BBB6] hover:text-[#fff] mb-2'><li>Contact us</li></Link>
           </ul>
         </div>
         <div className='text-[#D9DDDC] py-4 text-center md:text-start'>
           <h3 className='text-2xl font-bold mb-4'>Contact</h3>
           <ul className=''>
-            <Link href={"https://api.whatsapp.com/send?phone=963995817380"} className=' text-[#B9BBB6] hover:text-[#fff] mb-2'><li>Whatsapp </li></Link>
+            <Link href={"https://api.whatsapp.com/message/IUIFOVZQVHNLB1?autoload=1&app_absent=0"} className=' text-[#B9BBB6] hover:text-[#fff] mb-2'><li>Whatsapp </li></Link>
             <Link href={"https://api.whatsapp.com/send?phone=963995817380"} className=' text-[#B9BBB6] hover:text-[#fff] mb-2'><li>Support 24h</li></Link>
             
           </ul>
